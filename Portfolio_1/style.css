@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0;300;0,400;0,500;0,600;0,700;0,800');
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/18-Sunset-Themed.jpeg)no-repeat;
+    background: url(video/video.mp4)no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -45,7 +46,7 @@ section{
 }
 
 .animated-text h3{
-    color: #4e9eff;
+    color: #32CD32;
     font-size: 3em;
     font-weight: 700;
     line-height: 70px;
@@ -79,7 +80,7 @@ section{
     /* button on first page: "see my work" */   
 .btn{
     color: #fff;
-    background: #3a6cf4;
+    background: #006400;
     font-size: 1em;
     font-weight: 600;
     display: inline-block;
@@ -94,7 +95,7 @@ section{
 }
 
 .btn:hover{
-    background: #234bf6;
+    background: #32CD32;
 }
     /* end of button: "see my work */
 
@@ -127,7 +128,7 @@ header{
 
     /* start of javascript for navigation bar effects on scroll  */
 header.sticky{
-    background: #3a6cf4;
+    background: #006400;
     padding: 10px 200px;
     /* start of javascript for navigation bar effects on scroll  */
 
@@ -156,7 +157,7 @@ header .navigation a{
 }
 
 header .navigation a:hover{
-    color: #3a6cf4;
+    color: #006400;
 }
 /* end of nave bar options on home screen */
 
@@ -183,7 +184,7 @@ body{
 
 .section-title{
     position: relative;
-    color: #3a6cf4;
+    color: #006400;
     font-size: 2.2em;
     font-weight: 800;
     margin-bottom: 60px;
@@ -196,7 +197,7 @@ body{
     left: 50%;
     width: 140px;
     height: 4px;
-    background: #3a6cf4;
+    background: #006400;
     transform: translateX(-50%);
 }
 
@@ -208,7 +209,7 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background: #3a6cf4;
+    background: #006400;
     transform: translateX(-50%);
 }
     /* end of about me title above my picture */
@@ -286,6 +287,16 @@ body{
 .skills .content .col-right{
     position: relative;
     width: 46%;
+}
+
+.skills h3{
+    color: #006400;
+    font-size: 25px;
+}
+
+.skills p{
+    margin: 5px;
+    padding: 20px;
 }
 
 .skills .content .col-right .bar{
@@ -376,7 +387,7 @@ body{
 }
 
 .services .content .card .service-icon{
-    color: #3a6cf4;
+    color: #006400;
     font-size: 8em;
     text-align: center;
     transition: transform 0.5s ease;
@@ -391,7 +402,7 @@ body{
 }
 
 .services .content .card .info h3{
-    color: #3a6cf4;
+    color: #006400;
     font-size: 1.2em;
     font-weight: 700;
     margin: 10px;
@@ -470,7 +481,7 @@ body{
 }
 
 .contact .content .row .card .contact-icon{
-    color: #3a6cf4;
+    color: #006400;
     font-size: 4em;
     text-align: center;
     transition: transform 0.5s ease;
@@ -534,7 +545,7 @@ body{
 
 .contact-form .input-box .send-btn{
     color: #fff;
-    background: #3a6cf4;
+    background: #006400;
     display: inline-block;
     font-size: 1.1em;
     font-weight: 500;
@@ -547,7 +558,7 @@ body{
 }
 
 .contact-form .input-box .send-btn:hover{
-    background: #234bf6;
+    background: #006400;
 }
     /* End of Contact section */
 
@@ -570,7 +581,7 @@ body{
 }
 
 .footer p a{
-    color: #3a6cf4;
+    color: #006400;
     font-weight: 600;
     text-decoration: none;
 }
@@ -615,7 +626,7 @@ body{
     }
 
     header .navigation a:hover{
-        background: #3a6cf4;
+        background: #006400;
         color: #fff;
         transition: 0.3s ease;
     }
@@ -694,7 +705,7 @@ body{
 .scrollToTop-btn{
     z-index: 999;
     position: fixed;
-    background: #3a6cf4;
+    background: #006400;
     color: #fff;
     width: 45px;
     height: 45px;
@@ -714,4 +725,18 @@ body{
     right: 20px;
     opacity: 1;
     pointer-events: auto;
+}
+    /* End of Scroll to top Button */
+
+    /* Start of Reveal Website Elements on Scroll */
+.reveal{
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
